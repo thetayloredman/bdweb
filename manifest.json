@@ -1,15 +1,17 @@
 {
-    "manifest_version": 1,
+    "manifest_version": 2,
     "name": "BDWeb",
     "version": "0.0.0",
     "description": "BetterDiscord, but for the web client! -- Follows Discord's TOS",
-    "content_scrips": {
-        "matches": [
-            "*://*.discord.com/*",
-            "*://*.discordapp.com/*"
-        ],
-        "js": [
-            "bdweb.js"
-        ]
-    }
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.discord.com/*",
+                "*://*.discordapp.com/*"
+            ],
+            "js": [
+                "bdweb.js"
+            ]
+        }
+    ]
 }
