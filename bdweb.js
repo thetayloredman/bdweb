@@ -48,7 +48,7 @@ ${localStorage.bdweb__userCSS}
             console.info('BDWeb: Finished initial injection!');
             setTimeout(() => {
                 __bdweb__.showClientWarning();
-            }, 5000);
+            }, 10000);
         } else {
             console.info('BDWeb: Discord is not ready.');
         }
